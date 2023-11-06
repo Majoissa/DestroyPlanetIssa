@@ -41,19 +41,12 @@ public class MainMenuManager : MonoBehaviour
 
     public void GoToMainMenu()
     {
-        // Configura la vista para mostrar el menú principal
+        // Configuracion de la vista para mostrar el menú principal
         mainMenuPanel.SetActive(true); // Activa el menú principal
         gameUI.SetActive(false); // Desactiva la UI del juego
         gameManager.gameOverPanel.SetActive(false);
         ShowBestScore();
 
-        // Opcional: Reproducir música de fondo para el menú
-        /*if (menuMusicClip != null && !audioSource.isPlaying)
-        {
-            audioSource.clip = menuMusicClip;
-            audioSource.loop = true;
-            audioSource.Play();
-        }*/
     }
 
     public void ShowBestScore()
